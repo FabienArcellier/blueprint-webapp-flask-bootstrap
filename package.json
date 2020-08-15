@@ -1,0 +1,13 @@
+{
+    "name": "blueprint-webapp-flask-bootstrap",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {},
+    "devDependencies": {
+        "webpack": "^4.44.1",
+        "webpack-cli": "^3.3.12"
+    },
+    "scripts": {
+        "build": "webpack --config webpack.config.js"
+    }
+}

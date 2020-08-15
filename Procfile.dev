@@ -1,1 +1,2 @@
 web: FLASK_APP=app.webapp:app FLASK_ENV=development flask run
+assets: npm run watch

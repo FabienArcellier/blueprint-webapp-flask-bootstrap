@@ -2,12 +2,22 @@
     "name": "blueprint-webapp-flask-bootstrap",
     "version": "1.0.0",
     "private": true,
-    "dependencies": {},
+    "dependencies": {
+        "bootstrap": "^4.5.2",
+        "jquery": "^3.5.1",
+        "popper.js": "^1.16.1"
+    },
     "devDependencies": {
+        "css-loader": "^4.2.1",
+        "sass": "^1.26.10",
+        "sass-loader": "^9.0.3",
+        "style-loader": "^1.2.1",
         "webpack": "^4.44.1",
         "webpack-cli": "^3.3.12"
     },
     "scripts": {
-        "build": "webpack --config webpack.config.js"
+        "build": "webpack --config webpack.config.js",
+        "build-dev": "webpack --config webpack.config.dev.js",
+        "watch": "webpack --watch --config webpack.config.dev.js"
     }
 }

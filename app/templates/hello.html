@@ -1,3 +1,21 @@
 <!doctype html>
-<title>Hello from Flask</title>
-<h1>Hello {{ name }}!</h1>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <h1>Hello {{ name }}!</h1>
+    <div class="alert alert-primary" role="alert">
+        A simple primary alert—check it out!
+    </div>
+
+
+    <script src="{{ url_for('static', filename='dist/main.js') }}"></script>
+</body>
+
+</html>

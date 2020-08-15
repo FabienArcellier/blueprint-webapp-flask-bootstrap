@@ -1,4 +1,4 @@
-[![ci](https://github.com/FabienArcellier/blueprint-webapp-flask/actions/workflows/main.yml/badge.svg)](https://github.com/FabienArcellier/blueprint-webapp-flask/actions/workflows/main.yml)
+[![ci](https://github.com/FabienArcellier/blueprint-webapp-flask-bootstrap/actions/workflows/main.yml/badge.svg)](https://github.com/FabienArcellier/blueprint-webapp-flask-bootstrap/actions/workflows/main.yml)
 
 ## Motivation
 

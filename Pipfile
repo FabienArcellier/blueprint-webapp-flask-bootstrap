@@ -4,7 +4,7 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-blueprint-webapp-flask = {editable = true,extras = ["dev"],path = "."}
+blueprint-webapp-flask-bootstrap = {editable = true,extras = ["dev"],path = "."}
 
 [packages]
-blueprint-webapp-flask = {editable = true,path = "."}
+blueprint-webapp-flask-bootstrap = {editable = true,path = "."}

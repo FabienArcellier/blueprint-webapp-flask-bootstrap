@@ -2,10 +2,13 @@
 
 ## Motivation
 
-blueprint to implement a flask application. This application may be used to:
+blueprint to implement a flask application and use frontend a framework as bootstrap. This application may be used to:
 
-* build MVC application as multipage web application
+* build MVC application as multipage web application using bootstrap as css framework
 * build API application
+* build application using scss and javascript framework build with webpack
+* watch and compile python and javascript framework when they are changed in development mode
+* run in production with gunicorn
 * ...
 
 ## Getting started
@@ -17,12 +20,12 @@ from this repository.
 
 * `python 3.8` at least
 * [pipenv](https://pipenv.pypa.io/en/latest/)
+* `node` and `npm`
 
 ### Install the python dependencies
 
 ```bash
 make install_requirements_dev
-make start
 ```
 
 ## The latest version
@@ -33,21 +36,25 @@ You can find the latest version to ...
 git clone git@github.com:FabienArcellier/blueprint-webapp-flask.git
 ```
 
-## Usage
-
-You can run the application with the following command
-
-```python
-make start
-```
-
-### Usage for production
+## Usage in production mode
 
 This blueprint use ``gunicorn`` as wsgi server for production configuration.
 The command is set in the Procfile to be available on PaaS environment as ``Heroku`` or ``Scalingo``.
 
 ```bash
 make prod
+```
+
+## Usage in development mode
+
+Flask internal webserver is used to host the application. It will :
+
+```bash
+* watch changes on python files and reload server automatically
+* watch changes on javascript and scss files and regenerate assets automatically
+
+```python
+make start
 ```
 
 ## Contributing

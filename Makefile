@@ -50,6 +50,7 @@ start: ## run the webserver for development
 
 .PHONY: prod
 prod: ## run the webserver for production
+	npm run build
 	pipenv run honcho start
 
 .PHONY: tests

@@ -11,6 +11,8 @@
 /.vscode
 /node_modules
 /dist
+/app/static/dist/*
+!/app/static/dist/.gitkeep
 .coverage
 **.pyc
 MANIFEST
